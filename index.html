@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Page</title>
+    </head>
+    <body>
+        <p>Even or Odd</p>
+        <p id="demo">please type a number!</p>
+        <input type='text' id='theInput' />
+        <button onclick='changeText()'>Enter Text</button>
+        <script>
+            function even(box)
+            {
+                return box % 2;    
+            }
+            var nice = even(box);
+            if (nice == 0){
+                document.write('even');
+                
+            } else {
+                document.write('odd');
+            }
+            function changeText() 
+            {
+            // saves user input in a variable
+                var box = document.getElementById('theInput').value;
+        
+            // change the html content to whatever the user input
+                document.getElementById('demo').innerHTML = inputText;
+            }
+        </script>
+        
+    </body>
+</html>
